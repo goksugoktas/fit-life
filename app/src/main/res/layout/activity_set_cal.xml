@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:orientation="vertical"
+    tools:context=".activity.SetCalActivity">
+
+    <!--    Bilgilendirici bir yazı bulunmakta-->
+    <!--    Günlük kalori hedefinin girilmesi için bir EditText bulunmakta.-->
+    <!--    Kaydedilmesi için de bir buton bulunmakta-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Kalori Hedefi"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Günlük kalori hedefi, bir kişinin günlük olarak tüketmesi gereken kalori miktarıdır. Bu hedef, kişinin yaş, cinsiyet, vücut ağırlığı, aktivite seviyesi ve sağlık durumuna göre değişir.
+
+Kalori ihtiyacı, vücudumuzun temel işlevlerini yerine getirmesi için ihtiyaç duyduğu enerji miktarını belirler. Bu işlevler arasında solunum, dolaşım, sindirim, düşünme ve kas hareketi gibi işlevler yer alır.
+
+Günlük kalori ihtiyacını karşılamak için sağlıklı ve dengeli beslenmek gerekir. Sağlıklı bir beslenme planı, vücudun ihtiyaç duyduğu tüm besinleri yeterli miktarda almasını sağlar.
+
+Günlük kalori hedefi, kilo kontrolü için de önemlidir. Kilo vermek isteyen kişilerin günlük kalori alımını azaltması gerekir. Bu durum, haftada yaklaşık 0,5-1 kilogram kilo vermenizi sağlar.
+
+Günlük kalori hedefinizi hesaplamak için çeşitli çevrimiçi hesaplama araçlarını kullanabilirsiniz. Bu hesaplama araçları, yaş, cinsiyet, vücut ağırlığı, aktivite seviyesi ve sağlık durumunuzu dikkate alarak günlük kalori hedefinizi hesaplar.
+
+"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/etCalTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_bg"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:hint="Kalori hedefi..."
+            android:inputType="number"
+            android:paddingVertical="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="#D1D1D1"
+            android:textSize="18sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardBackgroundColor="#46C131"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingVertical="16dp"
+                android:text="Hedefi Kaydet"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
