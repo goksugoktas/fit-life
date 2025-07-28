@@ -32,7 +32,7 @@ Bu proje, kullanıcıların sağlıklı bir yaşam tarzı benimsemesine yardımc
 
 1. Bu projeyi klonlayın:
    ```bash
-   git clone https://github.com/goksugoktas/fit-life-app.git
+   git clone https://github.com/goksugoktas/fit-life.git
 # Healthy Life App - Android Mobile Programming Final Project
 
 This project is an Android application developed to assist users in achieving a healthier lifestyle by managing their daily calorie intake, exercise routines, and diet plans. The app provides a simple and user-friendly interface with goal tracking capabilities.
@@ -67,4 +67,4 @@ This project is an Android application developed to assist users in achieving a 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/goksugoktas/fit-life-app.git
+   git clone https://github.com/goksugoktas/fit-life.git
